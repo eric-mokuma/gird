@@ -4,16 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style></style>
+    <style>
+        body{
+            margin: 100px;
+            width: 900px;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 200px 400px 200px;
+            gap:1em;
+        }
+        .grid-item{
+            background-color: lightskyblue;
+            text-align: center;
+            border-radius: 8px;
+            padding: 2rem;
+        }
+        .head-container{
+            display: grid;
+            grid-template-columns: 200px 800px 300px;
+            grid-template-rows: 20px 20px 20px;;
+            gap:1em;;
+        }
+    </style>
 </head>
 <body>
+    <div class="head-container">
+        <div class="head-item">Header 1</div>
+        <div class="head-item">Header 2</div>
+        <div class="head-item">Header 3</div>
+    </div>
     <div class="grid-container">
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
+        <div class="grid-item">item 1</div>
+        <div class="grid-item">item 2</div>
+        <div class="grid-item">item 3</div>
+        <div class="grid-item">item 4</div>
+        <div class="grid-item">item 5</div>
+        <div class="grid-item">item 6</div>
     </div>
 </body>
 </html>
